@@ -1,0 +1,104 @@
+[0.063s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'gps_nav', '--event-handlers', 'console_direct+']
+[0.063s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=['console_direct+'], ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['gps_nav'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f2c47d00f50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f2c47d00bf0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f2c47d00bf0>>, mixin_verb=('build',))
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.085s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.086s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.086s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ws/team48/gps_nav'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.086s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.104s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.catkin' and name 'gps_nav'
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.104s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_args' from command line to 'None'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_target' from command line to 'None'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.115s] Level 5:colcon.colcon_core.verb:set package 'gps_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.115s] DEBUG:colcon.colcon_core.verb:Building package 'gps_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/team48/gps_nav/build/gps_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/team48/gps_nav/install/gps_nav', 'merge_install': False, 'path': '/ws/team48/gps_nav', 'symlink_install': False, 'test_result_base': None}
+[0.115s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.116s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/ws/team48/gps_nav' with build type 'catkin'
+[0.116s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/team48/gps_nav'
+[0.118s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.118s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+[0.403s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+[0.413s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav
+[0.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav
+[0.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'ros_package_path')
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/ros_package_path.ps1'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/ros_package_path.dsv'
+[0.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/ros_package_path.sh'
+[0.463s] Level 1:colcon.colcon_ros.task.catkin:checking '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages'
+[0.463s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'catkin_pythonpath')
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/catkin_pythonpath.ps1'
+[0.464s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/catkin_pythonpath.dsv'
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/catkin_pythonpath.sh'
+[0.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'pkg_config_path')
+[0.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path.ps1'
+[0.466s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path.dsv'
+[0.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path.sh'
+[0.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'pkg_config_path_multiarch')
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path_multiarch.ps1'
+[0.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path_multiarch.dsv'
+[0.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pkg_config_path_multiarch.sh'
+[0.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gps_nav)
+[0.472s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav' for CMake module files
+[0.473s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav' for CMake config files
+[0.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'cmake_prefix_path')
+[0.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/cmake_prefix_path.ps1'
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/cmake_prefix_path.dsv'
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/cmake_prefix_path.sh'
+[0.476s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav/lib'
+[0.476s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav/bin'
+[0.476s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav/lib/pkgconfig/gps_nav.pc'
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages'
+[0.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('gps_nav', 'pythonpath')
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pythonpath.ps1'
+[0.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pythonpath.dsv'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/hook/pythonpath.sh'
+[0.480s] Level 1:colcon.colcon_core.environment:checking '/ws/team48/gps_nav/install/gps_nav/bin'
+[0.481s] INFO:colcon.colcon_core.shell:Creating package script '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.sh'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.bash'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.zsh'
+[0.484s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/team48/gps_nav/install/gps_nav/share/colcon-core/packages/gps_nav)
+[0.484s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.484s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.484s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.484s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.491s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.492s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.494s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[0.494s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.495s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/team48/gps_nav/install/local_setup.ps1'
+[0.496s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/team48/gps_nav/install/_local_setup_util_ps1.py'
+[0.498s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/team48/gps_nav/install/setup.ps1'
+[0.501s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/team48/gps_nav/install/local_setup.sh'
+[0.502s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/team48/gps_nav/install/_local_setup_util_sh.py'
+[0.503s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/team48/gps_nav/install/setup.sh'
+[0.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/team48/gps_nav/install/local_setup.bash'
+[0.506s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/team48/gps_nav/install/setup.bash'
+[0.507s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/team48/gps_nav/install/local_setup.zsh'
+[0.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/team48/gps_nav/install/setup.zsh'

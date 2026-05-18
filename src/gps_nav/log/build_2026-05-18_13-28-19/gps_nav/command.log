@@ -1,0 +1,6 @@
+Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav
+Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav

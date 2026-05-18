@@ -1,0 +1,2 @@
+Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '1': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav

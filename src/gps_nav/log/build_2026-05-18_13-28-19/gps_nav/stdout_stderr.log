@@ -1,0 +1,64 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+-- Build files have been written to: /ws/team48/gps_nav/build/gps_nav
+Built target ament_cmake_python_copy_gps_nav_setup
+Built target ament_cmake_python_copy_gps_nav
+running egg_info
+creating gps_nav.egg-info
+writing gps_nav.egg-info/PKG-INFO
+writing dependency_links to gps_nav.egg-info/dependency_links.txt
+writing top-level names to gps_nav.egg-info/top_level.txt
+writing manifest file 'gps_nav.egg-info/SOURCES.txt'
+reading manifest file 'gps_nav.egg-info/SOURCES.txt'
+writing manifest file 'gps_nav.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_gps_nav_egg
+-- Install configuration: ""
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/pythonpath.sh
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/pythonpath.dsv
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/PKG-INFO
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/top_level.txt
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/gps_navigator_node.py
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/__init__.py
+Listing '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav'...
+Compiling '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/__init__.py'...
+Compiling '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/gps_navigator_node.py'...
+-- Installing: /ws/team48/gps_nav/install/gps_nav/lib/gps_nav/gps_navigator_node.py
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/package_run_dependencies/gps_nav
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/parent_prefix_path/gps_nav
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/ament_prefix_path.sh
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/ament_prefix_path.dsv
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/path.sh
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/path.dsv
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.bash
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.sh
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.zsh
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.dsv
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.dsv
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/packages/gps_nav
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/cmake/gps_navConfig.cmake
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/cmake/gps_navConfig-version.cmake
+-- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.xml

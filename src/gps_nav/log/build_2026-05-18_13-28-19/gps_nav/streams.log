@@ -1,0 +1,70 @@
+[0.008s] Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+[0.155s] -- The C compiler identification is GNU 13.3.0
+[0.250s] -- The CXX compiler identification is GNU 13.3.0
+[0.267s] -- Detecting C compiler ABI info
+[0.366s] -- Detecting C compiler ABI info - done
+[0.375s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.375s] -- Detecting C compile features
+[0.375s] -- Detecting C compile features - done
+[0.384s] -- Detecting CXX compiler ABI info
+[0.490s] -- Detecting CXX compiler ABI info - done
+[0.498s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.498s] -- Detecting CXX compile features
+[0.498s] -- Detecting CXX compile features - done
+[0.508s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.624s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.851s] -- Configuring done (0.8s)
+[0.858s] -- Generating done (0.0s)
+[0.859s] [33mCMake Warning:
+[0.859s]   Manually-specified variables were not used by the project:
+[0.859s] 
+[0.859s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[0.860s] 
+[0.860s] [0m
+[0.861s] -- Build files have been written to: /ws/team48/gps_nav/build/gps_nav
+[0.863s] Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+[0.865s] Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+[0.916s] Built target ament_cmake_python_copy_gps_nav_setup
+[0.916s] Built target ament_cmake_python_copy_gps_nav
+[1.042s] running egg_info
+[1.042s] creating gps_nav.egg-info
+[1.051s] writing gps_nav.egg-info/PKG-INFO
+[1.051s] writing dependency_links to gps_nav.egg-info/dependency_links.txt
+[1.052s] writing top-level names to gps_nav.egg-info/top_level.txt
+[1.052s] writing manifest file 'gps_nav.egg-info/SOURCES.txt'
+[1.080s] reading manifest file 'gps_nav.egg-info/SOURCES.txt'
+[1.080s] writing manifest file 'gps_nav.egg-info/SOURCES.txt'
+[1.100s] Built target ament_cmake_python_build_gps_nav_egg
+[1.109s] Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --build /ws/team48/gps_nav/build/gps_nav -- -j16 -l16
+[1.119s] Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav
+[1.125s] -- Install configuration: ""
+[1.125s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/pythonpath.sh
+[1.126s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/pythonpath.dsv
+[1.126s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info
+[1.126s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/dependency_links.txt
+[1.126s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/PKG-INFO
+[1.126s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/SOURCES.txt
+[1.127s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav-0.1.0-py3.12.egg-info/top_level.txt
+[1.127s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav
+[1.127s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/gps_navigator_node.py
+[1.127s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/__init__.py
+[1.158s] Listing '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav'...
+[1.158s] Compiling '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/__init__.py'...
+[1.158s] Compiling '/ws/team48/gps_nav/install/gps_nav/lib/python3.12/site-packages/gps_nav/gps_navigator_node.py'...
+[1.161s] -- Installing: /ws/team48/gps_nav/install/gps_nav/lib/gps_nav/gps_navigator_node.py
+[1.162s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/package_run_dependencies/gps_nav
+[1.162s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/parent_prefix_path/gps_nav
+[1.162s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/ament_prefix_path.sh
+[1.162s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/ament_prefix_path.dsv
+[1.163s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/path.sh
+[1.163s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/environment/path.dsv
+[1.163s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.bash
+[1.163s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.sh
+[1.163s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.zsh
+[1.164s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/local_setup.dsv
+[1.164s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.dsv
+[1.164s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/ament_index/resource_index/packages/gps_nav
+[1.165s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/cmake/gps_navConfig.cmake
+[1.165s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/cmake/gps_navConfig-version.cmake
+[1.165s] -- Installing: /ws/team48/gps_nav/install/gps_nav/share/gps_nav/package.xml
+[1.166s] Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '0': /usr/bin/cmake --install /ws/team48/gps_nav/build/gps_nav

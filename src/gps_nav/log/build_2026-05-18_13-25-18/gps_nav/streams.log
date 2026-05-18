@@ -1,0 +1,10 @@
+[0.008s] Invoking command in '/ws/team48/gps_nav/build/gps_nav': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
+[0.015s] [33mCMake Warning:
+[0.015s]   Ignoring extra path from command line:
+[0.015s] 
+[0.015s]    "/ws/team48/gps_nav"
+[0.016s] 
+[0.016s] [0m
+[0.016s] [0mCMake Error: The source directory "/ws/team48/gps_nav" does not appear to contain CMakeLists.txt.
+[0.016s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.017s] Invoked command in '/ws/team48/gps_nav/build/gps_nav' returned '1': /usr/bin/cmake /ws/team48/gps_nav -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/ws/team48/gps_nav/install/gps_nav
