@@ -55,9 +55,9 @@ while True:
             headers={
                 'X-GPS-Token': args.token,
                 'Accept': 'application/json',
-            }
+            },
         )
-        with urllib.request.urlopen(req, timeout=3) as resp:
+        with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read().decode())
             node.publish(data)
     except Exception as e:
