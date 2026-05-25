@@ -42,15 +42,19 @@ from gps_nav_interfaces.action import GpsGoal
 
 # ── tuning constants ────────────────────────────────────────────────────────
 CONTROL_HZ          = 10.0      # Hz – control loop rate
-MAX_LINEAR_SPEED    = 0.3       # m/s
+MAX_LINEAR_SPEED    = 1.0       # m/s
 MAX_ANGULAR_SPEED   = 1.0       # rad/s
-ANGULAR_P_GAIN      = 1.8       # proportional gain for heading error
+ANGULAR_P_GAIN      = 0.2       # proportional gain for heading error
 LINEAR_P_GAIN       = 0.5       # proportional gain for approach speed
 HEADING_ALIGN_DEG   = 15.0      # °  – slow to align before driving forward
 DEFAULT_ARRIVAL_M   = 2.0       # m  – default arrival radius
 
 
 # ── helpers ──────────────────────────────────────────────────────────────────
+
+def heading_from_quaternion(q) -> float:
+    yaw = yaw_from_quaternion(q)
+    return (720 - math.degrees(yaw)) % 360
 
 def haversine_distance(lat1, lon1, lat2, lon2) -> float:
     """Great-circle distance in metres between two WGS-84 points."""
@@ -99,6 +103,8 @@ class GpsNavigatorNode(Node):
         self._current_gps: NavSatFix | None = None
         self._current_yaw_deg: float = 0.0   # robot heading in degrees (ENU → geographic)
         self._paused: bool = False
+        self.heading = 10000.
+        self.last_q = None
 
         # ── subscriptions ──
         self.create_subscription(
@@ -138,17 +144,12 @@ class GpsNavigatorNode(Node):
             self._current_gps = msg
 
     def _odom_cb(self, msg: Odometry):
-        """
-        Convert odometry quaternion to a geographic heading (degrees).
-        Assumption: robot's +X forward, odom frame aligned with ENU
-        (East-North-Up).  Yaw 0 = East; we convert to compass (0 = North).
-        Adjust the offset if your odom frame differs.
-        """
-        yaw_enu_rad = yaw_from_quaternion(msg.pose.pose.orientation)
-        yaw_enu_deg = math.degrees(yaw_enu_rad)
-        # ENU yaw 0° = East, compass 0° = North  →  compass = 90 - yaw_ENU
-        self._current_yaw_deg = (90.0 - yaw_enu_deg) % 360.0
-
+        q = msg.pose.pose.orientation
+        yaw_nwu_rad = yaw_from_quaternion(q)
+        yaw_nwu_deg = math.degrees(yaw_nwu_rad)
+        self._current_yaw_deg = (720 - yaw_nwu_deg) % 360.0
+        self.heading = heading_from_quaternion(q)
+        self.last_q = q
     # ── service callbacks ────────────────────────────────────────────────────
 
     def _pause_cb(self, _req, response: Trigger.Response):
@@ -227,7 +228,9 @@ class GpsNavigatorNode(Node):
             # ── feedback ──
             feedback_msg.distance_to_goal = dist
             feedback_msg.bearing_to_goal  = target_bearing
-            feedback_msg.state = 'PAUSED' if self._paused else 'NAVIGATING'
+            feedback_msg.bearing = self.heading
+            feedback_msg.state = 'PAUSED' if self._paused else ('NAVIGATING')
+            # self.get_logger().info(feedback_msg.state)
             goal_handle.publish_feedback(feedback_msg)
 
             # ── paused: just stop and wait ──
@@ -242,11 +245,13 @@ class GpsNavigatorNode(Node):
             # Angular velocity: turn to face the target
             angular_z = max(-MAX_ANGULAR_SPEED,
                             min(MAX_ANGULAR_SPEED,
-                                math.radians(heading_error) * ANGULAR_P_GAIN))
+                                -math.radians(heading_error) * ANGULAR_P_GAIN))
 
             # Linear velocity: only drive forward when roughly aligned
+            self.get_logger().warn(f"heading error: {heading_error}, av: {angular_z}")
             if abs(heading_error) < HEADING_ALIGN_DEG:
                 approach_speed = min(MAX_LINEAR_SPEED, dist * LINEAR_P_GAIN)
+                # self.get_logger().info(f"go forward: {approach_speed}")
             else:
                 approach_speed = 0.0   # rotate in place first
 

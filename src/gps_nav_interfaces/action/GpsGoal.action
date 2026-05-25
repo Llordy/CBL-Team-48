@@ -10,4 +10,5 @@ string message
 # Feedback
 float64 distance_to_goal   # meters
 float64 bearing_to_goal    # degrees, 0=North
+float64 bearing 
 string state               # NAVIGATING | PAUSED
