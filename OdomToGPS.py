@@ -6,11 +6,13 @@ from typing import ForwardRef
 import urllib.request
 import threading
 import argparse
+from NavNode import METERS_PER_DEG
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix, NavSatStatus
 from nav_msgs.msg import Odometry
 
+METERS_PER_DEG = 111195.07973436874
 
 class GpsNode(Node):
     def __init__(self):
@@ -36,7 +38,7 @@ class GpsNode(Node):
         )
 
     def callback(self,msg: Odometry):
-        SCALE = 0.01
+        SCALE = 1/METERS_PER_DEG
         VSCALE = 1
         
         # x - forward

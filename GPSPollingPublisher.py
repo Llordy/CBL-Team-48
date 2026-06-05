@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json
+from math import isnan
 import time
 import urllib.request
 import threading
@@ -7,6 +8,7 @@ import argparse
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import NavSatFix, NavSatStatus
+from std_msgs.msg import Float32
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--relay', required=True, help='Relay server URL, e.g. http://192.168.1.50:8080')
@@ -18,6 +20,7 @@ class GpsNode(Node):
     def __init__(self):
         super().__init__('phone_gps')
         self.pub = self.create_publisher(NavSatFix, '/phone/gps/fix', 10)
+        self.head_pub = self.create_publisher(Float32, '/heading', 10)
 
     def publish(self, data: dict):
         status = data.get('status', 'Disconnected')
@@ -35,6 +38,7 @@ class GpsNode(Node):
         msg.altitude  = data['alt']
         msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
         self.pub.publish(msg)
+        if not isnan(data['heading']): self.head_pub.publish(data['heading'])
         self.get_logger().info(
             f"lat: {data['lat']:.6f}  lon: {data['lon']:.6f}  "
             f"alt: {data['alt']:.1f}m  heading: {data['heading']:.1f}°"
