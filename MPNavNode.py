@@ -45,6 +45,7 @@ from std_msgs.msg import Float32
 #  Constants
 # ─────────────────────────────────────────
 CONTROL_HZ        = 10
+ARRIVAL_RADIUS    = 0.5
 CONTROL_TOPIC     = "/cmd_vel"
 GOAL_TOPIC        = "/nav/goal"
 
@@ -257,7 +258,7 @@ class ControlProcess(multiprocessing.Process):
         est_heading = (720 + odom_heading - heading_err) % 360
 
         distance = gps_distance(*est_pos, goal_lat, goal_lon)
-        if distance < 2.0:
+        if distance < ARRIVAL_RADIUS:
             # clear goal in-place
             patched = list(f)
             patched[13] = False

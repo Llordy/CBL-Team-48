@@ -14,6 +14,8 @@ from std_msgs.msg import Float32
 #    Constants
 #-----------------
 CONTROL_HZ=10
+ARRIVAL_RADIUS = 0.5
+
 # topics
 CONTROL_TOPIC = "/cmd_vel"
 GOAL_TOPIC =  '/nav/goal'
@@ -37,7 +39,6 @@ def offset_position(lat, lon, offset_north, offset_east):
     return lat+delta_lat, lon+delta_lon
 
 def heading_from_quaternion(q) -> float:
-    """Extract yaw (radians, ROS convention) from a geometry_msgs Quaternion."""
     siny_cosp = 2.0 * (q.w * q.z + q.x * q.y)
     cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z)
     return (720 - math.degrees(math.atan2(siny_cosp, cosy_cosp))) % 360
@@ -134,7 +135,7 @@ class NavNode(Node):
 
         distance = gps_distance(*guesstimated_gps_pos, *self.goal)
 
-        if distance < 2: 
+        if distance < ARRIVAL_RADIUS: 
             self.goal = None
             self.publish_cmd(0,0)
             return 
