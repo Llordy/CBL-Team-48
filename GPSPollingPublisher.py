@@ -38,7 +38,11 @@ class GpsNode(Node):
         msg.altitude  = data['alt']
         msg.position_covariance_type = NavSatFix.COVARIANCE_TYPE_UNKNOWN
         self.pub.publish(msg)
-        if not isnan(data['heading']): self.head_pub.publish(data['heading'])
+
+        if not isnan(data['heading']): 
+            msg = Float32()
+            msg.data = data['heading']
+            self.head_pub.publish(msg)
         self.get_logger().info(
             f"lat: {data['lat']:.6f}  lon: {data['lon']:.6f}  "
             f"alt: {data['alt']:.1f}m  heading: {data['heading']:.1f}°"
