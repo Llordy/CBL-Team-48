@@ -14,10 +14,10 @@ from std_msgs.msg import Float32
 #    Constants
 #-----------------
 CONTROL_HZ=10
-ARRIVAL_RADIUS = 0.5
+ARRIVAL_RADIUS = 0.2
 
 # topics
-CONTROL_TOPIC = "/cmd_vel"
+CONTROL_TOPIC = "/cmd_vel_raw"
 GOAL_TOPIC =  '/nav/goal'
 
 # proportional control
