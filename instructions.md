@@ -91,5 +91,9 @@ Once the dashboard is running, open it in Firefox:
 firefox http://localhost:8080
 ```
 
-Or manually navigate to **http://localhost:8080** in your Firefox browser.
+Or manually navigate to **http://localhost:8080** in your browser of choice.
+
+This instruction doesn't enable GPS. For testing indoors GPS is ill-advised due 
+to diminished GPS accuracy indoors. If you still want to enable GPS follow the 
+instructions in `gps-instructions.pdf`.
 
