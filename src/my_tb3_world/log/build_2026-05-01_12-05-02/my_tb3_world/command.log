@@ -1,0 +1,4 @@
+Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world
+Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world

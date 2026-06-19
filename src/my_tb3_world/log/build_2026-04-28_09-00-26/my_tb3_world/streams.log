@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[0.044s] Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[0.051s] Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world
+[0.057s] -- Install configuration: ""
+[0.058s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch
+[0.058s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch/new_world.launch.py
+[0.058s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds
+[0.058s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds/new_world.world
+[0.058s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/package_run_dependencies/my_tb3_world
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/parent_prefix_path/my_tb3_world
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.sh
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.dsv
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.sh
+[0.059s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.dsv
+[0.060s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.bash
+[0.060s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.sh
+[0.060s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.zsh
+[0.060s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.dsv
+[0.060s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.dsv
+[0.060s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/packages/my_tb3_world
+[0.061s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig.cmake
+[0.061s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig-version.cmake
+[0.061s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
+[0.062s] Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world

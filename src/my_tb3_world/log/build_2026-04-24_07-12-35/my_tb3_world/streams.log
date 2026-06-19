@@ -1,0 +1,44 @@
+[0.027s] Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake /ws/src/my_tb3_world -DCMAKE_INSTALL_PREFIX=/ws/src/my_tb3_world/install/my_tb3_world
+[0.247s] -- The C compiler identification is GNU 13.3.0
+[0.375s] -- The CXX compiler identification is GNU 13.3.0
+[0.399s] -- Detecting C compiler ABI info
+[0.550s] -- Detecting C compiler ABI info - done
+[0.565s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.565s] -- Detecting C compile features
+[0.566s] -- Detecting C compile features - done
+[0.582s] -- Detecting CXX compiler ABI info
+[0.741s] -- Detecting CXX compiler ABI info - done
+[0.758s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.759s] -- Detecting CXX compile features
+[0.759s] -- Detecting CXX compile features - done
+[0.772s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.000s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.348s] -- Configuring done (1.3s)
+[1.356s] -- Generating done (0.0s)
+[1.361s] -- Build files have been written to: /ws/src/my_tb3_world/build/my_tb3_world
+[1.366s] Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake /ws/src/my_tb3_world -DCMAKE_INSTALL_PREFIX=/ws/src/my_tb3_world/install/my_tb3_world
+[1.368s] Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[1.424s] Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[1.440s] Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world
+[1.453s] -- Install configuration: ""
+[1.454s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch
+[1.454s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch/new_world.launch.py
+[1.455s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds
+[1.455s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds/new_world.world
+[1.456s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
+[1.456s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/package_run_dependencies/my_tb3_world
+[1.456s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/parent_prefix_path/my_tb3_world
+[1.457s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.sh
+[1.457s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.dsv
+[1.458s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.sh
+[1.458s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.dsv
+[1.459s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.bash
+[1.460s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.sh
+[1.460s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.zsh
+[1.461s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.dsv
+[1.461s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.dsv
+[1.462s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/packages/my_tb3_world
+[1.462s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig.cmake
+[1.463s] -- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig-version.cmake
+[1.464s] -- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
+[1.466s] Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world

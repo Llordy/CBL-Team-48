@@ -1,0 +1,101 @@
+[0.144s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.144s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f3119058dd0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f3119058920>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f3119058920>>, mixin_verb=('build',))
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.200s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.201s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.201s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/ws/src/my_tb3_world'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.235s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'my_tb3_world'
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.236s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_args' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_target' from command line to 'None'
+[0.265s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_clean_cache' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_clean_first' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'cmake_force_configure' from command line to 'False'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'ament_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'catkin_cmake_args' from command line to 'None'
+[0.266s] Level 5:colcon.colcon_core.verb:set package 'my_tb3_world' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.266s] DEBUG:colcon.colcon_core.verb:Building package 'my_tb3_world' with the following arguments: {'ament_cmake_args': None, 'build_base': '/ws/src/my_tb3_world/build/my_tb3_world', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/ws/src/my_tb3_world/install/my_tb3_world', 'merge_install': False, 'path': '/ws/src/my_tb3_world', 'symlink_install': False, 'test_result_base': None}
+[0.267s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.268s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.268s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/ws/src/my_tb3_world' with build type 'ament_cmake'
+[0.268s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/ws/src/my_tb3_world'
+[0.274s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.275s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.275s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.296s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake /ws/src/my_tb3_world -DCMAKE_INSTALL_PREFIX=/ws/src/my_tb3_world/install/my_tb3_world
+[1.636s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake /ws/src/my_tb3_world -DCMAKE_INSTALL_PREFIX=/ws/src/my_tb3_world/install/my_tb3_world
+[1.637s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[1.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --build /ws/src/my_tb3_world/build/my_tb3_world -- -j16 -l16
+[1.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/ws/src/my_tb3_world/build/my_tb3_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world
+[1.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_tb3_world)
+[1.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/ws/src/my_tb3_world/build/my_tb3_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/jazzy /usr/bin/cmake --install /ws/src/my_tb3_world/build/my_tb3_world
+[1.740s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world' for CMake module files
+[1.742s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world' for CMake config files
+[1.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_tb3_world', 'cmake_prefix_path')
+[1.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.dsv'
+[1.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.sh'
+[1.747s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/bin'
+[1.747s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/lib/pkgconfig/my_tb3_world.pc'
+[1.750s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/lib/python3.12/site-packages'
+[1.751s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/bin'
+[1.751s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.ps1'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.dsv'
+[1.753s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.sh'
+[1.754s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.bash'
+[1.756s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.zsh'
+[1.757s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/src/my_tb3_world/install/my_tb3_world/share/colcon-core/packages/my_tb3_world)
+[1.758s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_tb3_world)
+[1.758s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world' for CMake module files
+[1.759s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world' for CMake config files
+[1.760s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_tb3_world', 'cmake_prefix_path')
+[1.761s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.ps1'
+[1.761s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.dsv'
+[1.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/hook/cmake_prefix_path.sh'
+[1.762s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/bin'
+[1.763s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/lib/pkgconfig/my_tb3_world.pc'
+[1.763s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/lib/python3.12/site-packages'
+[1.763s] Level 1:colcon.colcon_core.environment:checking '/ws/src/my_tb3_world/install/my_tb3_world/bin'
+[1.764s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.ps1'
+[1.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.dsv'
+[1.765s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.sh'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.bash'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.zsh'
+[1.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/ws/src/my_tb3_world/install/my_tb3_world/share/colcon-core/packages/my_tb3_world)
+[1.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.767s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.767s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.783s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.783s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.787s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[1.788s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.789s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/src/my_tb3_world/install/local_setup.ps1'
+[1.792s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/src/my_tb3_world/install/_local_setup_util_ps1.py'
+[1.794s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/src/my_tb3_world/install/setup.ps1'
+[1.797s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/src/my_tb3_world/install/local_setup.sh'
+[1.798s] INFO:colcon.colcon_core.shell:Creating prefix util module '/ws/src/my_tb3_world/install/_local_setup_util_sh.py'
+[1.801s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/src/my_tb3_world/install/setup.sh'
+[1.805s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/src/my_tb3_world/install/local_setup.bash'
+[1.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/src/my_tb3_world/install/setup.bash'
+[1.811s] INFO:colcon.colcon_core.shell:Creating prefix script '/ws/src/my_tb3_world/install/local_setup.zsh'
+[1.813s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/ws/src/my_tb3_world/install/setup.zsh'

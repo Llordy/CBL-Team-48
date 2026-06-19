@@ -1,0 +1,38 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /ws/src/my_tb3_world/build/my_tb3_world
+-- Install configuration: ""
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/launch/new_world.launch.py
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/worlds/new_world.world
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/package_run_dependencies/my_tb3_world
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/parent_prefix_path/my_tb3_world
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.sh
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/ament_prefix_path.dsv
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.sh
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/environment/path.dsv
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.bash
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.sh
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.zsh
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/local_setup.dsv
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.dsv
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/ament_index/resource_index/packages/my_tb3_world
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig.cmake
+-- Installing: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/cmake/my_tb3_worldConfig-version.cmake
+-- Up-to-date: /ws/src/my_tb3_world/install/my_tb3_world/share/my_tb3_world/package.xml
